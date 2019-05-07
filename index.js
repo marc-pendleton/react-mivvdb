@@ -86,7 +86,7 @@ class App extends Component {
           <button type="button" onClick={this.clearSearch}>Clear</button>
           <button type="button" onClick={this.sortEmail}>Sort by email</button>
         </div>
-        <Grid container className="grid" justify="center" spacing={20}>
+        <Grid container className="grid" justify="center" spacing={16}>
           {this.state.results.map(result =>
             <Grid item xs={12} sm={6} md={3} key={ result.phone }>
               <Card name={result.name.first + " " + result.name.last} picture={result.picture.large} email={result.email} city={result.location.city} state={result.location.state} phone={result.phone}

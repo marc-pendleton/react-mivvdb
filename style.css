@@ -67,8 +67,9 @@ h1, p {
   }
 
   .grid {
-    position: relative;
-    margin-top: 30px;
+    position: absolute;
+    top: 60px;
+    left: 20px;
   }
   
   .error {
