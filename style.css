@@ -1,3 +1,76 @@
 h1, p {
-  font-family: Lato;
-}
+    font-family: Lato;
+    color: white;
+  }
+  
+  p {
+    color: grey;
+  }
+  
+  li {
+    list-style-type: none;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 10px;
+    border-radius: 10px; 
+    text-align: center;
+    background-color: white;
+    margin-bottom: 50px;
+    width: 60%;
+  }
+  
+  .container {
+    padding: 2px 16px;
+  }
+  
+  img {
+    border: 5px solid white;
+    border-radius: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .avatar {
+    position: relative;
+    top: -60px;
+  }
+  
+  .top-border{
+    background-color: rgba(18, 68, 231, 0.842);
+    width: 100%;
+    margin-left: -10px;
+    padding-right: 20px;
+    bottom: 200px;
+    top: 100px;
+    margin-top: -20px;
+    padding-top: 5px;
+    padding-bottom: 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .info {
+    margin-top: -50px;
+  }
+  
+  .searchBar {
+    float: none;
+  }
+  
+  .icon {
+    color: white;
+    position: relative;
+    float: left;
+    left: 10px;
+    top: 5px;
+  }
+  
+  .error {
+    background-color: red
+  }
+  
