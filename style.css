@@ -7,10 +7,6 @@ h1, p {
     color: grey;
   }
   
-  li {
-    list-style-type: none;
-  }
-  
   .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 10px;
@@ -68,6 +64,11 @@ h1, p {
     float: left;
     left: 10px;
     top: 5px;
+  }
+
+  .grid {
+    position: relative;
+    margin-top: 30px;
   }
   
   .error {

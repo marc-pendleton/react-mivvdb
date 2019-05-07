@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUserEdit } from '@fortawesome/free-solid-svg-icons'
+import Grid from '@material-ui/core/Grid';
 import Card from './card';
 import './style.css';
     
@@ -85,17 +86,14 @@ class App extends Component {
           <button type="button" onClick={this.clearSearch}>Clear</button>
           <button type="button" onClick={this.sortEmail}>Sort by email</button>
         </div>
-        <ul>
+        <Grid container className="grid" justify="center" spacing={20}>
           {this.state.results.map(result =>
-            <li key={ result.phone }>
+            <Grid item xs={12} sm={6} md={3} key={ result.phone }>
               <Card name={result.name.first + " " + result.name.last} picture={result.picture.large} email={result.email} city={result.location.city} state={result.location.state} phone={result.phone}
               />
-            </li>
+            </Grid>
           )}
-          <li>
-          <h1> {this.state.name} </h1>
-          </li>
-        </ul>
+        </Grid>
       </div>
     );
   }
